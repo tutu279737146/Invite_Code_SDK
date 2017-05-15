@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Invite_Code_SDK_Example' do
+  pod 'Invite_Code_SDK', :path => '../'
+
+  target 'Invite_Code_SDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
