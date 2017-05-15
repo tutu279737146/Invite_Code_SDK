@@ -14,9 +14,8 @@
  *  初始化
  *
  *  @param urlString  服务器接口地址
- *  @oaram type      接口名字
  *  @param delegate 设置代理
  */
-+ (void)requestServer:(NSString *)urlString InterfaceType:(QXInterfaceType)type InviteCodeDelegate:(id<QXInviteCodeDelegate>)delegate;
++ (void)requestServer:(NSString *)urlString InviteCodeDelegate:(id<QXInviteCodeDelegate>)delegate;
 
 @end

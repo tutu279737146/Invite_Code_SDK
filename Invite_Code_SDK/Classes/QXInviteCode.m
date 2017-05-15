@@ -8,16 +8,11 @@
 
 #import "QXInviteCode.h"
 #import <CommonCrypto/CommonHMAC.h>
-
-#import "QXSignature.h"
 #import "QXNetworkTool.h"
+#import "QXString.h"
+#import "QXSignature.h"
 
-#define BaseUrl @"http://invitecode.quxueabc.com:8000/app"
-#define GET_CODE @"/get_code"
-#define USE_CODE @"/use_code"
-#define GET_ECHOS @"/get_echos"
-#define WRITE_STATUS @"/write_statu"
-#define IS_ACTIVE @"/is_active"
+
 
 @interface QXInviteCode () <NSCopying>
 
@@ -77,7 +72,7 @@
     NSString *otherParams = [arrayM componentsJoinedByString:@"&"];
     
     NSString *urlString = [NSString stringWithFormat:@"%@%@?sig=%@&%@",BaseUrl,GET_CODE,sig,otherParams];
-    [QXNetworkTool requestServer:urlString InviteCodeDelegate:self.delegate];
+    [QXNetworkTool requestServer:urlString InterfaceType:QXGETCODE InviteCodeDelegate:self.delegate];
 }
 
 
@@ -96,7 +91,7 @@
     }
     NSString *otherParams = [arrayM componentsJoinedByString:@"&"];
     NSString *urlString = [NSString stringWithFormat:@"%@%@?sig=%@&%@",BaseUrl,USE_CODE,sig,otherParams];
-    [QXNetworkTool requestServer:urlString InviteCodeDelegate:self.delegate];
+    [QXNetworkTool requestServer:urlString InterfaceType:QXUSECODE InviteCodeDelegate:self.delegate];
 
 }
 
@@ -113,7 +108,7 @@
     NSString *otherParams = [arrayM componentsJoinedByString:@"&"];
     
     NSString *urlString = [NSString stringWithFormat:@"%@%@?sig=%@&%@",BaseUrl,GET_ECHOS,sig,otherParams];
-    [QXNetworkTool requestServer:urlString InviteCodeDelegate:self.delegate];
+    [QXNetworkTool requestServer:urlString InterfaceType:QXGETECHOS InviteCodeDelegate:self.delegate];
 }
 #pragma mark - 修改成功邀请用户的可读状态
 - (void)modifyUserReadingState:(NSDictionary *)params
@@ -130,7 +125,7 @@
     
     NSString *urlString = [NSString stringWithFormat:@"%@%@?sig=%@&%@",BaseUrl,WRITE_STATUS,sig,otherParams];
     
-    [QXNetworkTool requestServer:urlString InviteCodeDelegate:self.delegate];
+    [QXNetworkTool requestServer:urlString InterfaceType:QXWRITESTATUS InviteCodeDelegate:self.self.delegate];
 
 }
 #pragma mark - 查询指定用户是否使用过邀请码
@@ -148,26 +143,6 @@
     
     NSString *urlString = [NSString stringWithFormat:@"%@%@?sig=%@&%@",BaseUrl,IS_ACTIVE,sig,otherParams];
     
-    [QXNetworkTool requestServer:urlString InviteCodeDelegate:self.delegate];
+    [QXNetworkTool requestServer:urlString InterfaceType:QXISACTIVE InviteCodeDelegate:self.delegate];
 }
-
-#pragma mark - 请求接口
-//- (void)requestServer:(NSString *)urlString
-//{
-//    // 1.创建一个网络请求
-//    NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]];
-//    // 2.获得会话对象
-//    NSURLSession *session = [NSURLSession sharedSession];
-//    // 3.根据会话对象，创建一个Task任务：
-//    __weak typeof(self) weakSelf = self;
-//    NSURLSessionDataTask *sessionDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-//        
-//        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:(NSJSONReadingMutableLeaves) error:nil];
-//        if (weakSelf.delegate && [self.delegate respondsToSelector:@selector(inviteCodeCallback:Result:)]) {
-//            [self.delegate inviteCodeCallback:weakSelf Result:dict];
-//        }
-//    }];
-//    // 4.最后一步，执行任务（resume也是继续执行）:
-//    [sessionDataTask resume];
-//}
 @end

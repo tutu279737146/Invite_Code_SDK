@@ -13,6 +13,7 @@
 #import "QXInviteCode.h"
 #import "QXNetworkTool.h"
 #import "QXSignature.h"
+#import "QXString.h"
 
 FOUNDATION_EXPORT double Invite_Code_SDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char Invite_Code_SDKVersionString[];

@@ -14,7 +14,7 @@
 
 @implementation QXNetworkTool
 
-+ (void)requestServer:(NSString *)urlString InviteCodeDelegate:(id<QXInviteCodeDelegate>)delegate
++ (void)requestServer:(NSString *)urlString InterfaceType:(QXInterfaceType)type InviteCodeDelegate:(id<QXInviteCodeDelegate>)delegate
 {
     // 1.创建一个网络请求
     NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]];
@@ -24,8 +24,8 @@
     NSURLSessionDataTask *sessionDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:(NSJSONReadingMutableLeaves) error:nil];
-        if (delegate && [delegate respondsToSelector:@selector(inviteCodeCallback:Result:)]) {
-            [delegate inviteCodeCallback:[QXInviteCode shareInviteCode] Result:dict];
+        if (delegate && [delegate respondsToSelector:@selector(inviteCodeCallback:InterfaceType:Result:)]) {
+            [delegate inviteCodeCallback:[QXInviteCode shareInviteCode] InterfaceType:type Result:dict];
         }
     }];
     // 4.最后一步，执行任务（resume也是继续执行）:

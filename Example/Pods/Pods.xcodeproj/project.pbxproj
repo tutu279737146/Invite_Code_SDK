@@ -7,21 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F3A5926BF1990396F6A679E71416601 /* QXInviteCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D23ECC33103D1E9A8836462DE8BA12 /* QXInviteCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		260D02AC5A5401CD11879D1282B9DC87 /* QXNetworkTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FA5489D01F444264D3FA8630523E21B /* QXNetworkTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33423DC0A5081E470DB28D902EBA40AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		0BF25502AB405BF68909B25A11F2D976 /* QXString.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C5FEF05E39056A25EAD5475EE42170E /* QXString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E1EC1112435296FD9B55FBCE372671A /* QXNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7468E9D63D53EF5144FDDE58FDA3BDFE /* QXNetworkTool.m */; };
+		217964075596EEA12B47F9FFAFCB0658 /* QXNetworkTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AEE04163C506C0A59F4E65D1105126B /* QXNetworkTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27797E278411479BA7723584E8DF6CBA /* Invite_Code_SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC9D77BECF218D93ED25BC9A44354D8 /* Invite_Code_SDK-dummy.m */; };
+		30019604B568A2EC09BC9BDB586EDC4F /* QXSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 5009235FB34FFADC0888AE3D075FC387 /* QXSignature.m */; };
 		346AB9155DBDF826C3BF2E425B8840F0 /* Pods-Invite_Code_SDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A0EA89BE4A9D976F664B1C95D07D093 /* Pods-Invite_Code_SDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43CA9A457B27F2463742DF38301EF148 /* Pods-Invite_Code_SDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 287825E522221F031ADBE6A844DFF534 /* Pods-Invite_Code_SDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		504336C264BD008EBCE9196A4B8CA3A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		5DF580EB8CE42D7A565700A434F297DD /* QXInviteCode.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFC0D5D214574543D16A78D77EF635F /* QXInviteCode.m */; };
-		83368324ECC2721D2D531BC8DFE4ADCB /* Invite_Code_SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87792B57B2AA616AE397362778AE0069 /* Invite_Code_SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50CDA2AAF0A17B1F1B541B6F3C462ACA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5AD18AA7BB959A4A63DE7F950CE781F4 /* QXInviteCode.h in Headers */ = {isa = PBXBuildFile; fileRef = F67DB5CDB96236ABCD2CE6CB72A46F60 /* QXInviteCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75A27F141BA2F92C20BE309337D48724 /* QXSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C2A986A8034275A49E21BA80FDF4BB8 /* QXSignature.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84C2903383CEF2334F71A466647A9200 /* Invite_Code_SDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87792B57B2AA616AE397362778AE0069 /* Invite_Code_SDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84EC7DBF2EC22B5F9EF4EC6C44ED8622 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		9104034AE4829CC95B109DA95F1702D6 /* QXSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5775B78CCB6AD33EF0DC7365140B6 /* QXSignature.m */; };
-		9A934996F4191A7BD07A8AA53018A5FB /* QXNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 114D004029138E4991778703FD7CAA16 /* QXNetworkTool.m */; };
 		9E36CD553551AAC3CD6AA378F2DB1AE3 /* Pods-Invite_Code_SDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B43C8D00BB5E808CE275A79F9F9936 /* Pods-Invite_Code_SDK_Example-dummy.m */; };
-		A2DC6FCBEE20EC05962476EB9211DF54 /* QXSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA57236032AED3EF83C8A697EDA6B2A /* QXSignature.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AB0F97B09CF386E9E2D40C90FB69321F /* Invite_Code_SDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC9D77BECF218D93ED25BC9A44354D8 /* Invite_Code_SDK-dummy.m */; };
 		CDA8AC89134D468B917DE2504E05B43C /* Pods-Invite_Code_SDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4442771B47B6D155BA5E158518CF80BC /* Pods-Invite_Code_SDK_Tests-dummy.m */; };
+		E3A363CE48A2D865511A5AE9D43CCF78 /* QXInviteCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3056B0EBEB737C7279A5D3B2007E3F45 /* QXInviteCode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,31 +30,32 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B3AA5186807A5EC6259465493A61A500;
+			remoteGlobalIDString = 86094C83FB4EAF174E0180B52574448F;
 			remoteInfo = Invite_Code_SDK;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05D23ECC33103D1E9A8836462DE8BA12 /* QXInviteCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QXInviteCode.h; sourceTree = "<group>"; };
 		0636746D9BE0400212B4F4BE4D6AD457 /* Pods-Invite_Code_SDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Invite_Code_SDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0AC9D77BECF218D93ED25BC9A44354D8 /* Invite_Code_SDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Invite_Code_SDK-dummy.m"; sourceTree = "<group>"; };
-		114D004029138E4991778703FD7CAA16 /* QXNetworkTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QXNetworkTool.m; sourceTree = "<group>"; };
-		18D5775B78CCB6AD33EF0DC7365140B6 /* QXSignature.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QXSignature.m; sourceTree = "<group>"; };
 		26D852C1F6E830088C40B76D701D09AC /* Pods-Invite_Code_SDK_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Invite_Code_SDK_Example-resources.sh"; sourceTree = "<group>"; };
 		287825E522221F031ADBE6A844DFF534 /* Pods-Invite_Code_SDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Invite_Code_SDK_Example-umbrella.h"; sourceTree = "<group>"; };
+		3056B0EBEB737C7279A5D3B2007E3F45 /* QXInviteCode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QXInviteCode.m; sourceTree = "<group>"; };
 		33499CFB88E88836716D634C7566F8F9 /* Pods_Invite_Code_SDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Invite_Code_SDK_Example.framework; path = "Pods-Invite_Code_SDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B43C8D00BB5E808CE275A79F9F9936 /* Pods-Invite_Code_SDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Invite_Code_SDK_Example-dummy.m"; sourceTree = "<group>"; };
+		3C5FEF05E39056A25EAD5475EE42170E /* QXString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QXString.h; sourceTree = "<group>"; };
 		4040FD3525CA7D6B2A6FF31610CDDA86 /* Invite_Code_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Invite_Code_SDK.framework; path = Invite_Code_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4442771B47B6D155BA5E158518CF80BC /* Pods-Invite_Code_SDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Invite_Code_SDK_Tests-dummy.m"; sourceTree = "<group>"; };
 		4DE07E26CA77BD88FF392F409CB61DF3 /* Pods-Invite_Code_SDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Invite_Code_SDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4FA5489D01F444264D3FA8630523E21B /* QXNetworkTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QXNetworkTool.h; sourceTree = "<group>"; };
+		5009235FB34FFADC0888AE3D075FC387 /* QXSignature.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QXSignature.m; sourceTree = "<group>"; };
 		5144D68F95D90891C11D6A50830039FA /* Pods-Invite_Code_SDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Invite_Code_SDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		570AEC2831487FB7B6E4A2D3F30D14D2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A0EA89BE4A9D976F664B1C95D07D093 /* Pods-Invite_Code_SDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Invite_Code_SDK_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6014699C1A6276C5E1AEC5F7A4467697 /* Pods-Invite_Code_SDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Invite_Code_SDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6C7659C451980E186E6810008822AD8A /* Pods-Invite_Code_SDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Invite_Code_SDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7468E9D63D53EF5144FDDE58FDA3BDFE /* QXNetworkTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QXNetworkTool.m; sourceTree = "<group>"; };
+		7AEE04163C506C0A59F4E65D1105126B /* QXNetworkTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QXNetworkTool.h; sourceTree = "<group>"; };
 		804AB703F5DFA78AA873961586980C94 /* Pods-Invite_Code_SDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Invite_Code_SDK_Tests.modulemap"; sourceTree = "<group>"; };
 		87792B57B2AA616AE397362778AE0069 /* Invite_Code_SDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Invite_Code_SDK-umbrella.h"; sourceTree = "<group>"; };
 		8A9F2BFC6DFDF663D39B5AD706A5E581 /* Pods-Invite_Code_SDK_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Invite_Code_SDK_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -64,14 +66,14 @@
 		927025C9353964ED5CD2CF7B7F9F0268 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9A322B7087EAA2A8B7FEDE75DA8D0A6A /* Invite_Code_SDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Invite_Code_SDK-prefix.pch"; sourceTree = "<group>"; };
-		BAFC0D5D214574543D16A78D77EF635F /* QXInviteCode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QXInviteCode.m; sourceTree = "<group>"; };
+		9C2A986A8034275A49E21BA80FDF4BB8 /* QXSignature.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QXSignature.h; sourceTree = "<group>"; };
 		BBFFB64789092A75A4DE2E691011F683 /* Pods_Invite_Code_SDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Invite_Code_SDK_Tests.framework; path = "Pods-Invite_Code_SDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8F29BB2996E6E98D58E7DA8B402C73 /* Invite_Code_SDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Invite_Code_SDK.xcconfig; sourceTree = "<group>"; };
 		E4C2EFAB658D55F2B2C495DBA487A0C7 /* Pods-Invite_Code_SDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Invite_Code_SDK_Example-frameworks.sh"; sourceTree = "<group>"; };
 		E95B5306D454B757D2ECFB20E11E7BF3 /* Pods-Invite_Code_SDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Invite_Code_SDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		EAA57236032AED3EF83C8A697EDA6B2A /* QXSignature.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QXSignature.h; sourceTree = "<group>"; };
 		EF207079B91430E251DE09B3FA37D772 /* Pods-Invite_Code_SDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Invite_Code_SDK_Example.modulemap"; sourceTree = "<group>"; };
 		F11DB9EFF6CD20725457A28B2285B66D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F67DB5CDB96236ABCD2CE6CB72A46F60 /* QXInviteCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QXInviteCode.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,26 +93,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DCA083EA59EA05FA652134792513529A /* Frameworks */ = {
+		DCBD8AB6CF426FD759EAD47F622F55FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33423DC0A5081E470DB28D902EBA40AA /* Foundation.framework in Frameworks */,
+				50CDA2AAF0A17B1F1B541B6F3C462ACA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02B8F10B0C06AEF148855F42120830A4 /* Invite_Code_SDK */ = {
-			isa = PBXGroup;
-			children = (
-				6EC57308FD4E8685561B6932DD6B507C /* Classes */,
-			);
-			name = Invite_Code_SDK;
-			path = Invite_Code_SDK;
-			sourceTree = "<group>";
-		};
 		09D1DE5A85882352C99411C75DF793D0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,10 +118,25 @@
 			path = "Example/Pods/Target Support Files/Invite_Code_SDK";
 			sourceTree = "<group>";
 		};
+		3AA708CF276331CBC4F03DC2C16342C8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F67DB5CDB96236ABCD2CE6CB72A46F60 /* QXInviteCode.h */,
+				3056B0EBEB737C7279A5D3B2007E3F45 /* QXInviteCode.m */,
+				7AEE04163C506C0A59F4E65D1105126B /* QXNetworkTool.h */,
+				7468E9D63D53EF5144FDDE58FDA3BDFE /* QXNetworkTool.m */,
+				9C2A986A8034275A49E21BA80FDF4BB8 /* QXSignature.h */,
+				5009235FB34FFADC0888AE3D075FC387 /* QXSignature.m */,
+				3C5FEF05E39056A25EAD5475EE42170E /* QXString.h */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		3BF551DF1FE9D7D3B8330AA363087F4F /* Invite_Code_SDK */ = {
 			isa = PBXGroup;
 			children = (
-				02B8F10B0C06AEF148855F42120830A4 /* Invite_Code_SDK */,
+				9888C0B1207B6EB64E75FDC42BA89E9E /* Invite_Code_SDK */,
 				09D1DE5A85882352C99411C75DF793D0 /* Support Files */,
 			);
 			name = Invite_Code_SDK;
@@ -142,20 +150,6 @@
 				A7739D90127BB416130A1628173F563C /* Pods-Invite_Code_SDK_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		6EC57308FD4E8685561B6932DD6B507C /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				05D23ECC33103D1E9A8836462DE8BA12 /* QXInviteCode.h */,
-				BAFC0D5D214574543D16A78D77EF635F /* QXInviteCode.m */,
-				4FA5489D01F444264D3FA8630523E21B /* QXNetworkTool.h */,
-				114D004029138E4991778703FD7CAA16 /* QXNetworkTool.m */,
-				EAA57236032AED3EF83C8A697EDA6B2A /* QXSignature.h */,
-				18D5775B78CCB6AD33EF0DC7365140B6 /* QXSignature.m */,
-			);
-			name = Classes;
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		7A31F42315A22002ADF1AC2D517C4333 /* Development Pods */ = {
@@ -205,6 +199,15 @@
 			path = "Target Support Files/Pods-Invite_Code_SDK_Example";
 			sourceTree = "<group>";
 		};
+		9888C0B1207B6EB64E75FDC42BA89E9E /* Invite_Code_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				3AA708CF276331CBC4F03DC2C16342C8 /* Classes */,
+			);
+			name = Invite_Code_SDK;
+			path = Invite_Code_SDK;
+			sourceTree = "<group>";
+		};
 		A7739D90127BB416130A1628173F563C /* Pods-Invite_Code_SDK_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +245,18 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4D49DB55CAAFC520A012DA278B3EF40D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C2903383CEF2334F71A466647A9200 /* Invite_Code_SDK-umbrella.h in Headers */,
+				5AD18AA7BB959A4A63DE7F950CE781F4 /* QXInviteCode.h in Headers */,
+				217964075596EEA12B47F9FFAFCB0658 /* QXNetworkTool.h in Headers */,
+				75A27F141BA2F92C20BE309337D48724 /* QXSignature.h in Headers */,
+				0BF25502AB405BF68909B25A11F2D976 /* QXString.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CD3D99EFDDFF6D7636D2D8236FE7AD5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,17 +270,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				43CA9A457B27F2463742DF38301EF148 /* Pods-Invite_Code_SDK_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7480841C60CED6B054C3787A0A447CC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83368324ECC2721D2D531BC8DFE4ADCB /* Invite_Code_SDK-umbrella.h in Headers */,
-				0F3A5926BF1990396F6A679E71416601 /* QXInviteCode.h in Headers */,
-				260D02AC5A5401CD11879D1282B9DC87 /* QXNetworkTool.h in Headers */,
-				A2DC6FCBEE20EC05962476EB9211DF54 /* QXSignature.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,13 +293,13 @@
 			productReference = BBFFB64789092A75A4DE2E691011F683 /* Pods_Invite_Code_SDK_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B3AA5186807A5EC6259465493A61A500 /* Invite_Code_SDK */ = {
+		86094C83FB4EAF174E0180B52574448F /* Invite_Code_SDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 338CA154A7FC938554170A3D96329E94 /* Build configuration list for PBXNativeTarget "Invite_Code_SDK" */;
+			buildConfigurationList = 3DE4F037D6B8AEF9C59E8C5C96FC6587 /* Build configuration list for PBXNativeTarget "Invite_Code_SDK" */;
 			buildPhases = (
-				188867391D52CFC384A4A4AA34DF5B94 /* Sources */,
-				DCA083EA59EA05FA652134792513529A /* Frameworks */,
-				A7480841C60CED6B054C3787A0A447CC /* Headers */,
+				5496121AE81F349BCE6B5114D983E479 /* Sources */,
+				DCBD8AB6CF426FD759EAD47F622F55FB /* Frameworks */,
+				4D49DB55CAAFC520A012DA278B3EF40D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -345,7 +349,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B3AA5186807A5EC6259465493A61A500 /* Invite_Code_SDK */,
+				86094C83FB4EAF174E0180B52574448F /* Invite_Code_SDK */,
 				B8C9AD04A8597B654A10B6EBC538E276 /* Pods-Invite_Code_SDK_Example */,
 				0C780BE43DE21086EF398CF1760602F6 /* Pods-Invite_Code_SDK_Tests */,
 			);
@@ -353,14 +357,14 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		188867391D52CFC384A4A4AA34DF5B94 /* Sources */ = {
+		5496121AE81F349BCE6B5114D983E479 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB0F97B09CF386E9E2D40C90FB69321F /* Invite_Code_SDK-dummy.m in Sources */,
-				5DF580EB8CE42D7A565700A434F297DD /* QXInviteCode.m in Sources */,
-				9A934996F4191A7BD07A8AA53018A5FB /* QXNetworkTool.m in Sources */,
-				9104034AE4829CC95B109DA95F1702D6 /* QXSignature.m in Sources */,
+				27797E278411479BA7723584E8DF6CBA /* Invite_Code_SDK-dummy.m in Sources */,
+				E3A363CE48A2D865511A5AE9D43CCF78 /* QXInviteCode.m in Sources */,
+				0E1EC1112435296FD9B55FBCE372671A /* QXNetworkTool.m in Sources */,
+				30019604B568A2EC09BC9BDB586EDC4F /* QXSignature.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +390,7 @@
 		3591B39ECF6BC04EF81218107EB8A228 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Invite_Code_SDK;
-			target = B3AA5186807A5EC6259465493A61A500 /* Invite_Code_SDK */;
+			target = 86094C83FB4EAF174E0180B52574448F /* Invite_Code_SDK */;
 			targetProxy = 2A52F42AD49EE69100298D014FC3A825 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -476,6 +480,70 @@
 			};
 			name = Debug;
 		};
+		5A20CF3BE3D5C7E5F09B295EBE786FE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC8F29BB2996E6E98D58E7DA8B402C73 /* Invite_Code_SDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Invite_Code_SDK/Invite_Code_SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Invite_Code_SDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Invite_Code_SDK/Invite_Code_SDK.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Invite_Code_SDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5AA1446C5A90077E699AAC1E881F2EDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC8F29BB2996E6E98D58E7DA8B402C73 /* Invite_Code_SDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Invite_Code_SDK/Invite_Code_SDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Invite_Code_SDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Invite_Code_SDK/Invite_Code_SDK.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Invite_Code_SDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -556,38 +624,6 @@
 			};
 			name = Release;
 		};
-		8A5D0922853B99B24F2B4C063794A58F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC8F29BB2996E6E98D58E7DA8B402C73 /* Invite_Code_SDK.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Invite_Code_SDK/Invite_Code_SDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Invite_Code_SDK/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Invite_Code_SDK/Invite_Code_SDK.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Invite_Code_SDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		9B840D095F54366708DCD39656099A58 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8B87C43C2B347C655D7A2EE3E1A8C908 /* Pods-Invite_Code_SDK_Tests.debug.xcconfig */;
@@ -616,38 +652,6 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_Invite_Code_SDK_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B93BAF7903DA13DA96734287CFA6D8E2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC8F29BB2996E6E98D58E7DA8B402C73 /* Invite_Code_SDK.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Invite_Code_SDK/Invite_Code_SDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Invite_Code_SDK/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Invite_Code_SDK/Invite_Code_SDK.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Invite_Code_SDK;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -704,11 +708,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		338CA154A7FC938554170A3D96329E94 /* Build configuration list for PBXNativeTarget "Invite_Code_SDK" */ = {
+		3DE4F037D6B8AEF9C59E8C5C96FC6587 /* Build configuration list for PBXNativeTarget "Invite_Code_SDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B93BAF7903DA13DA96734287CFA6D8E2 /* Debug */,
-				8A5D0922853B99B24F2B4C063794A58F /* Release */,
+				5A20CF3BE3D5C7E5F09B295EBE786FE6 /* Debug */,
+				5AA1446C5A90077E699AAC1E881F2EDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

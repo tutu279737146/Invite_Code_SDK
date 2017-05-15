@@ -8,14 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSInteger,QXInterfaceType) {
-    QXGETCODE = 0, // 获取用户验证码
-    QXUSECODE, // 使用邀请码
-    QXGETECHOS, // 获取邀请成功的用户
-    QXWRITESTATUS, // 修改成功邀请用户的可读状态
-    QXISACTIVE, // 用户是否使用过邀请码
-};
-
 @class QXInviteCode;
 @protocol QXInviteCodeDelegate <NSObject>
 
@@ -25,7 +17,7 @@ typedef NS_ENUM(NSInteger,QXInterfaceType) {
  *  @param inviteCode 引擎实例
  *  @param info  返回信息
  */
--(void)inviteCodeCallback:(QXInviteCode *)inviteCode InterfaceType:(QXInterfaceType)type Result:(NSDictionary *)info;
+-(void)inviteCodeCallback:(QXInviteCode *)inviteCode Result:(NSDictionary *)info;
 
 @end
 
