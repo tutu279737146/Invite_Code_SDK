@@ -17,5 +17,6 @@
 #define GET_ECHOS @"/get_echos"
 #define WRITE_STATUS @"/write_statu"
 #define IS_ACTIVE @"/is_active"
+#define IS_CODE_ENABLE @"/is_code_enable"
 
 #endif /* QXString_h */

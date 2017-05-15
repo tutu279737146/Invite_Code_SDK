@@ -55,6 +55,49 @@
     _delegate = delegate;
 }
 
+- (void)inviteCodeInterface:(QXInterfaceType)type Parameter:(NSDictionary *)params
+{
+    NSMutableDictionary *mutableDic = [[NSMutableDictionary alloc] initWithDictionary:params];
+    [mutableDic setObject:self.appId forKey:@"appid"];
+    
+    // 签名
+    NSString *sig = [QXSignature generateSignatureWithAccessKey:self.accessKey Parameters:mutableDic];
+    
+    NSMutableArray *arrayM = [[NSMutableArray alloc] initWithCapacity:0];
+    
+    for (NSString *key in [mutableDic allKeys]){
+        [arrayM addObject:[NSString stringWithFormat:@"%@=%@",key,mutableDic[key]]];
+    }
+    NSString *otherParams = [arrayM componentsJoinedByString:@"&"];
+    
+    NSString *urlString = nil;
+    
+    switch (type) {
+        case QXGETCODE:
+            urlString = [NSString stringWithFormat:@"%@%@?sig=%@&%@",BaseUrl,GET_CODE,sig,otherParams];
+            break;
+        case QXUSECODE:
+            urlString = [NSString stringWithFormat:@"%@%@?sig=%@&%@",BaseUrl,USE_CODE,sig,otherParams];
+            break;
+        case QXGETECHOS:
+            urlString = [NSString stringWithFormat:@"%@%@?sig=%@&%@",BaseUrl,GET_ECHOS,sig,otherParams];
+            break;
+        case QXWRITESTATUS:
+            urlString = [NSString stringWithFormat:@"%@%@?sig=%@&%@",BaseUrl,WRITE_STATUS,sig,otherParams];
+            break;
+        case QXISACTIVE:
+            urlString = [NSString stringWithFormat:@"%@%@?sig=%@&%@",BaseUrl,IS_ACTIVE,sig,otherParams];
+            break;
+        case QXISCODEENABLE:
+            urlString = [NSString stringWithFormat:@"%@%@?sig=%@&%@",BaseUrl,IS_ACTIVE,sig,otherParams];
+            break;
+        default:
+            break;
+    }
+    [QXNetworkTool requestServer:urlString InterfaceType:type InviteCodeDelegate:self.delegate];
+}
+
+/*
 #pragma mark - 获得用户的邀请码
 - (void)getInviteCode:(NSDictionary *)params
 {
@@ -145,4 +188,22 @@
     
     [QXNetworkTool requestServer:urlString InterfaceType:QXISACTIVE InviteCodeDelegate:self.delegate];
 }
+#pragma mark - 判断邀请码用户是否使用过邀请码
+- (void)inviteCodeIsEnable:(NSDictionary *)params;
+{
+    NSMutableDictionary *mutableDic = [[NSMutableDictionary alloc] initWithDictionary:params];
+    [mutableDic setObject:self.appId forKey:@"appid"];
+    NSString *sig = [QXSignature generateSignatureWithAccessKey:self.accessKey Parameters:mutableDic];
+    
+    NSMutableArray *arrayM = [[NSMutableArray alloc] initWithCapacity:0];
+    for (NSString *key in [mutableDic allKeys]){
+        [arrayM addObject:[NSString stringWithFormat:@"%@=%@",key,mutableDic[key]]];
+    }
+    NSString *otherParams = [arrayM componentsJoinedByString:@"&"];
+    
+    NSString *urlString = [NSString stringWithFormat:@"%@%@?sig=%@&%@",BaseUrl,IS_CODE_ENABLE,sig,otherParams];
+    
+    [QXNetworkTool requestServer:urlString InterfaceType:QXISCODEENABLE InviteCodeDelegate:self.delegate];
+}
+ */
 @end

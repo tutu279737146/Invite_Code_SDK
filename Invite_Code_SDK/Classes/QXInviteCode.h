@@ -14,6 +14,7 @@ typedef NS_ENUM(NSInteger,QXInterfaceType) {
     QXGETECHOS, // 获取邀请成功的用户
     QXWRITESTATUS, // 修改成功邀请用户的可读状态
     QXISACTIVE, // 用户是否使用过邀请码
+    QXISCODEENABLE, // 判断用户是否使用过邀请码
 };
 
 @class QXInviteCode;
@@ -48,27 +49,22 @@ typedef NS_ENUM(NSInteger,QXInterfaceType) {
 /**
  *  获取用户邀请码
  *
- *  @params uid   要获得邀请码的用户id
+ *  @params params   {uid:要获得邀请码的用户id} 字典参数
  */
-- (void *)getInviteCode:(NSDictionary *)params;
 
 /**
  *  用户使用邀请码
  *
- *  @params uid    要获得邀请码的用户id
- *  @params code   用户要使用的邀请码
+ *  @params params {uid:要获得邀请码的用户id,code:用户要使用的邀请码}字典参数
  *
  */
-- (void)useInviteCode:(NSDictionary *)params;
 
 /**
  *  获取指定用户的成功邀请用户ID
  *  
- *  @params params {uid=要获得邀请码的用户id,type=全部查询还是只查询未读条目}
- *  @params uid    要获得邀请码的用户id
+ *  @params params {uid:要获得邀请码的用户id,type:全部查询还是只查询未读条目} 字典参数
  *  @params type   (可选项)全部查询还是只查询未读条目,如果不写此参数，默认是全部查询。1: 是查询未读条目 0: 是查询全部条目
  */
-- (void)getUserIdOfSuccessfullyInvited:(NSDictionary *)params;
 
 /**
  * 修改成功邀请用户的可读状态
@@ -76,12 +72,19 @@ typedef NS_ENUM(NSInteger,QXInterfaceType) {
  * @params params {uid=要获得邀请码的用户id} 字典参数
  *
  */
-- (void)modifyUserReadingState:(NSDictionary *)params;
 /**
  * 查询指定用户是否使用过邀请码
  *
- * @params params {uid=要获得邀请码的用户id} 字典参数
+ * @params params {uid:要获得邀请码的用户id} 字典参数
  *
  */
-- (void)inviteCodeIsAvtive:(NSDictionary *)params;
+
+/**
+ * 判断邀请码用户是否使用过邀请码
+ * 
+ * @params type   服务器接口
+ * @params params {uid:要获得邀请码的用户id，code:要判断的邀请码} 字典参数
+ *
+ */
+- (void)inviteCodeInterface:(QXInterfaceType)type Parameter:(NSDictionary *)params;
 @end
