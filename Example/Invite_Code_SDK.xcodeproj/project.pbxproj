@@ -62,10 +62,10 @@
 		827E628240C9A24B21531764 /* Pods_Invite_Code_SDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Invite_Code_SDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D7906765D42600D452C313 /* Pods-Invite_Code_SDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Invite_Code_SDK_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Invite_Code_SDK_Example/Pods-Invite_Code_SDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AC5BBB8D7BC583F7F6078247 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AC5BBB8D7BC583F7F6078247 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C0E7F2E1F651326AB73E82B4 /* Pods-Invite_Code_SDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Invite_Code_SDK_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Invite_Code_SDK_Tests/Pods-Invite_Code_SDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E09BFAAA6449CA62A8586AB9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		EF5A7EE3E8AA688C6B92AB1D /* Invite_Code_SDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Invite_Code_SDK.podspec; path = ../Invite_Code_SDK.podspec; sourceTree = "<group>"; };
+		E09BFAAA6449CA62A8586AB9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EF5A7EE3E8AA688C6B92AB1D /* Invite_Code_SDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Invite_Code_SDK.podspec; path = ../Invite_Code_SDK.podspec; sourceTree = "<group>"; };
 		FB44747566A858AEF000F6A4 /* Pods_Invite_Code_SDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Invite_Code_SDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -524,6 +524,7 @@
 			baseConfigurationReference = 22DEB86FA2ACF61E0974E42D /* Pods-Invite_Code_SDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Invite_Code_SDK/Invite_Code_SDK-Prefix.pch";
 				INFOPLIST_FILE = "Invite_Code_SDK/Invite_Code_SDK-Info.plist";
@@ -539,6 +540,7 @@
 			baseConfigurationReference = 86D7906765D42600D452C313 /* Pods-Invite_Code_SDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Invite_Code_SDK/Invite_Code_SDK-Prefix.pch";
 				INFOPLIST_FILE = "Invite_Code_SDK/Invite_Code_SDK-Info.plist";

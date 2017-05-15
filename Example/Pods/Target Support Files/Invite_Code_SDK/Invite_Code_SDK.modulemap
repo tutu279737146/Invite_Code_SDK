@@ -1,0 +1,6 @@
+framework module Invite_Code_SDK {
+  umbrella header "Invite_Code_SDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

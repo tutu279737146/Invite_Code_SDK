@@ -1,0 +1,16 @@
+PODS:
+  - Invite_Code_SDK (0.1.0)
+
+DEPENDENCIES:
+  - Invite_Code_SDK (from `../`)
+
+EXTERNAL SOURCES:
+  Invite_Code_SDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Invite_Code_SDK: f1b9dc580ee4373298e703aeb350bffc5376552e
+
+PODFILE CHECKSUM: 533332968078d5605ebb2ccdbc71ab5af79d5f5f
+
+COCOAPODS: 1.2.1
