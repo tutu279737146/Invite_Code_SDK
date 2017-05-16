@@ -7,8 +7,15 @@
 //
 
 #import "HZBNViewController.h"
+#import "QXInviteCode.h"
 
-@interface HZBNViewController ()
+#define BaseUrl @"http://invitecode.quxueabc.com:8000/app"
+#define GET_CODE @"/get_code"
+@interface HZBNViewController ()<NSURLConnectionDataDelegate,QXInviteCodeDelegate>
+
+@property (nonatomic, strong) NSMutableString *mutableStr;
+
+@property (nonatomic, strong) NSMutableData *responseData;
 
 @end
 
@@ -17,13 +24,39 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    [[QXInviteCode shareInviteCode] registerWithAppId:@"1" Secret:nil AccessKey:@"234erwsd2" delegate:self];
+    // 获取用户邀请码
+//    NSDictionary *dict1 = @{@"uid":@"1010"};/
+//    [[QXInviteCode shareInviteCode] inviteCodeInterface:QXGETCODE Parameter:dict1];
+    
+//     判断邀请码用户是否使用过邀请码
+        NSDictionary *dict6 = @{@"uid":@"1010",@"code":@"i1zuvjur"};
+        [[QXInviteCode shareInviteCode] inviteCodeInterface:QXISCODEENABLE Parameter:dict6];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)inviteCodeCallback:(QXInviteCode *)inviteCode InterfaceType:(QXInterfaceType)type Result:(id)info
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    switch (type) {
+        case QXGETECHOS:
+        {
+            if([info isKindOfClass:[NSArray class]]){
+                NSArray *array = (NSArray *)info;
+                if (array.count>0) {
+                    NSLog(@"info =%@",array);
+                }
+            }
+        }
+            break;
+        case QXISCODEENABLE:
+        {
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"sad" message:@"lall " delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+            
+            [alertView show];
+        }
+            
+        default:
+            break;
+    }
 }
-
 @end

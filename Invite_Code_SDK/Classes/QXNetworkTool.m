@@ -24,9 +24,11 @@
     NSURLSessionDataTask *sessionDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         id result = [NSJSONSerialization JSONObjectWithData:data options:(NSJSONReadingMutableLeaves) error:nil];
-        if (delegate && [delegate respondsToSelector:@selector(inviteCodeCallback:InterfaceType:Result:)]) {
-            [delegate inviteCodeCallback:[QXInviteCode shareInviteCode] InterfaceType:type Result:result];
-        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (delegate && [delegate respondsToSelector:@selector(inviteCodeCallback:InterfaceType:Result:)]) {
+                [delegate inviteCodeCallback:[QXInviteCode shareInviteCode] InterfaceType:type Result:result];
+            }
+        });
     }];
     // 4.最后一步，执行任务（resume也是继续执行）:
     [sessionDataTask resume];
