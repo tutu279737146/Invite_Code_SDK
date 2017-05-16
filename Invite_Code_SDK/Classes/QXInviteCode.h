@@ -26,7 +26,7 @@ typedef NS_ENUM(NSInteger,QXInterfaceType) {
  *  @param inviteCode 引擎实例
  *  @param info  返回信息
  */
--(void)inviteCodeCallback:(QXInviteCode *)inviteCode InterfaceType:(QXInterfaceType)type Result:(NSDictionary *)info;
+-(void)inviteCodeCallback:(QXInviteCode *)inviteCode InterfaceType:(QXInterfaceType)type Result:(id)info;
 
 @end
 
