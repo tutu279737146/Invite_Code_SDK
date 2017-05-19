@@ -47,12 +47,11 @@
     return [QXInviteCode shareInviteCode];
 }
 
-- (void)registerWithAppId:(NSString *)appId Secret:(NSString *)secret AccessKey:(NSString *)key delegate:(id<QXInviteCodeDelegate>)delegate
+- (void)registerWithAppId:(NSString *)appId Secret:(NSString *)secret AccessKey:(NSString *)key
 {
     _appId = appId;
     _secret = secret;
     _accessKey = key;
-    _delegate = delegate;
 }
 
 - (void)inviteCodeInterface:(QXInterfaceType)type Parameter:(NSDictionary *)params

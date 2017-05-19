@@ -45,7 +45,7 @@ typedef NS_ENUM(NSInteger,QXInterfaceType) {
  *  @param key    签名需要的accesskey
  *  @param delegate 设置代理
  */
-- (void)registerWithAppId:(NSString *)appId Secret:(NSString *)secret AccessKey:(NSString *)key delegate:(id<QXInviteCodeDelegate>)delegate;
+- (void)registerWithAppId:(NSString *)appId Secret:(NSString *)secret AccessKey:(NSString *)key;
 /**
  *  获取用户邀请码
  *
