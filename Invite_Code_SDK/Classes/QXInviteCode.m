@@ -89,7 +89,7 @@
             urlString = [NSString stringWithFormat:@"%@%@?sig=%@&%@",BaseUrl,IS_ACTIVE,sig,otherParams];
             break;
         case QXISCODEENABLE:
-            urlString = [NSString stringWithFormat:@"%@%@?sig=%@&%@",BaseUrl,IS_ACTIVE,sig,otherParams];
+            urlString = [NSString stringWithFormat:@"%@%@?sig=%@&%@",BaseUrl,IS_CODE_ENABLE,sig,otherParams];
             break;
         default:
             break;

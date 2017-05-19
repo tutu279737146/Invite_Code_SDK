@@ -23,9 +23,16 @@
     // 3.根据会话对象，创建一个Task任务：
     NSURLSessionDataTask *sessionDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
-        id result = [NSJSONSerialization JSONObjectWithData:data options:(NSJSONReadingMutableLeaves) error:nil];
-        dispatch_async(dispatch_get_main_queue(), ^{
+        if (error){
+            NSLog(@"%@",error);
+            return ;
+        }
+        
+        id result = [NSJSONSerialization JSONObjectWithData:data options:(NSJSONReadingMutableContainers) error:nil];
+        
+        dispatch_async(dispatch_get_main_queue(),^{
             if (delegate && [delegate respondsToSelector:@selector(inviteCodeCallback:InterfaceType:Result:)]) {
+
                 [delegate inviteCodeCallback:[QXInviteCode shareInviteCode] InterfaceType:type Result:result];
             }
         });
