@@ -5,25 +5,25 @@
 [![License](https://img.shields.io/cocoapods/l/Invite_Code_SDK.svg?style=flat)](http://cocoapods.org/pods/Invite_Code_SDK)
 [![Platform](https://img.shields.io/cocoapods/p/Invite_Code_SDK.svg?style=flat)](http://cocoapods.org/pods/Invite_Code_SDK)
 
-## Example
+## 项目背景
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+**大部分的App出于拉新的需求,会有邀请码的功能**
 
-## Requirements
+- 老用户发现邀请码，受到邀请码奖励的吸引，把邀请码通过各种方式传递给新用户；
+- 新用户获得邀请码和app信息后，下载，打开，注册，找到邀请码填写的页面输入邀请码；
 
-## Installation
+## 项目要求
+- iOS6以上系统可以使用
+- ARC环境
 
-Invite_Code_SDK is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+## 安装
 
-```ruby
-pod "Invite_Code_SDK"
-```
+- CocoaPods: `pod "Invite_Code_SDK"`
+- 手动导入:将**Invite_Code_SDK**文件夹拖入项目中,导入头文件:`#import <QXInviteCode.h>`
 
-## Author
+## 使用
+**详见Demo**
+## 更多
+- 如果发现bug,请提一个issue.欢迎pull requests.
+- [个人博客](http://tushizhan.com/)
 
-279737146@qq.com, 279737146@qq.com
-
-## License
-
-Invite_Code_SDK is available under the MIT license. See the LICENSE file for more info.
